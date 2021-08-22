@@ -18,5 +18,6 @@ read -p :" c: " c
 
 echo ${sort1[*]}
 array1=${sort1[@]}
+echo "assending order is"
 echo ${array1[@]}
 
