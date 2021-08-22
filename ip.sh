@@ -1,4 +1,4 @@
-#! /bin/bash
+#! /bin/bash -x
 read -p :" a: " a
 read -p :" b: " b
 read -p :" c: " c
@@ -10,11 +10,13 @@ read -p :" c: " c
    echo $f
    g=$(( $a%$b+$c ))
    echo $g
-      declare -A sort
-   sort[a+c*c]=$d
-   sort[a*b+c]=$e
-   sort[c+a/b]=$f
-   sort[a%b+c]=$g
+      declare -A sort1
+   sort1[a+c*c]=$d
+   sort1[a*b+c]=$e
+   sort1[c+a/b]=$f
+   sort1[a%b+c]=$g
 
-echo ${sort[*]}
+echo ${sort1[*]}
+array1=${sort1[@]}
+echo ${array1[@]}
 
