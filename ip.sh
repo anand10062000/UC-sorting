@@ -2,3 +2,5 @@
 read -p :" a: " a
 read -p :" b: " b
 read -p :" c: " c
+	d=$(( $a+$b*$c ))
+   echo $d
